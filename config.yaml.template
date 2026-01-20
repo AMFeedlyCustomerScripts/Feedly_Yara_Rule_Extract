@@ -1,0 +1,46 @@
+# =============================================================================
+# Feedly YARA Extractor Configuration Template
+# =============================================================================
+#
+# Copy this file to config.yaml and fill in your credentials:
+#   cp config.yaml.template config.yaml
+#
+# Alternatively, set the FEEDLY_API_KEY environment variable or create a .env file.
+#
+# =============================================================================
+
+feedly:
+  # Your Feedly API token (required)
+  # Get your token from: https://feedly.com/v3/auth/dev
+  # Or set FEEDLY_API_KEY environment variable
+  api_token: "YOUR_FEEDLY_API_TOKEN_HERE"
+
+  # Stream IDs to monitor for YARA rules
+  # These are typically AI Feeds or Detection Rules feeds from Feedly TI
+  # Format: "feed/https://feedly.com/f/<feed-id>" or "enterprise/<org>/category/<id>"
+  stream_ids:
+    - "feed/https://feedly.com/f/YOUR_FEED_ID_HERE"
+    # Add more streams as needed:
+    # - "enterprise/your-org/category/threat-intel"
+    # - "feed/https://feedly.com/f/another-feed-id"
+
+# =============================================================================
+# Optional Settings
+# =============================================================================
+
+# extraction:
+#   # Maximum articles to process per run
+#   max_articles: 500
+#
+#   # How many hours back to look for articles
+#   since_hours: 24
+#
+#   # Fetch full article details (slower but more complete)
+#   fetch_full_articles: false
+
+# output:
+#   # Default output format: "yara" or "json"
+#   format: "yara"
+#
+#   # Default output directory
+#   directory: "./output"

@@ -1,0 +1,46 @@
+# =============================================================================
+# Feedly YARA Extractor - Git Ignore
+# =============================================================================
+
+# Credentials and secrets - NEVER commit these
+config.yaml
+.env
+*.key
+*.pem
+*.crt
+credentials.json
+
+# Output files
+*.yara
+*.yar
+output/
+rules/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+.venv/
+ENV/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/

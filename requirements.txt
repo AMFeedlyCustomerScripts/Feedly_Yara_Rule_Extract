@@ -1,0 +1,7 @@
+# Feedly YARA Extractor Dependencies
+
+# Required
+requests>=2.28.0
+
+# Optional - for config file support
+pyyaml>=6.0
